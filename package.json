@@ -1,0 +1,24 @@
+{
+    "name": "@yy/st-client",
+    "version": "0.0.1",
+    "main": "index.js",
+    "scripts": {
+      "debug": "cross-env NODE_ENV=test KM_LOCAL_ENV=1 node --inspect-brk=10000 .",
+      "start": "cross-env NODE_ENV=test KM_LOCAL_ENV=1 node .",
+      "release": "cross-env NODE_ENV=production koaman pm2"
+    },
+    "dependencies": {
+      "axios": "^0.21.1",
+      "del": "^5.1.0",
+      "execa": "^4.0.2",
+      "koaman": "4.4.9"
+    },
+    "devDependencies": {
+      "eslint": "^7.2.0",
+      "eslint-config-standard": "^14.1.1",
+      "eslint-plugin-import": "^2.21.2",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-promise": "^4.2.1",
+      "eslint-plugin-standard": "^4.0.1"
+    }
+  }
